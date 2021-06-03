@@ -1,13 +1,12 @@
 # Document_Reader
-Reading in our modern age in not the best way.
-* Our intelligent code will read your document perfectly as possible. It will never Read your document like eminem.
+Reading in our modern age is not the best way.
+* Our intelligent code will read your document perfectly as possible. It will never Read your document like Eminem.
 
-How to use ?
-* Have an text file? Sit back on chair and use text reader.
+How to use it?
+* Have a text file? Sit back on the chair and use a text reader.
 
-* For text files just type name of text file when we ask. No need to put .txt we automate it for you.
+* For text files just type the name of the text file when we ask. No need to put .txt we automate it for you.
 
-* Have Unformated text? Alright our intelligent code will make your any type of text Beautiful enough for impressive listning experience.
+* Have Unformatted text? Alright, our intelligent code will make any type of text Beautiful enough for an impressive listening experience.
 
-* Have an PDF file? Alright then use text/PDF reader.
-
+* Have a PDF file? Alright then use a text/PDF reader.
