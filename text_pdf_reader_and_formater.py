@@ -56,16 +56,12 @@ if '1' in inp:
         str_txt = str_txt.replace('\n', ' ')
         single_spaces = ' '.join(str_txt.split())
         single_spaces = single_spaces.replace('.', '.\n')
-        # print(str)
-        # print(len(str))
         fout_txt.write(single_spaces)
         fout_txt.close()
     except SyntaxError:
         print("Something went wrong..")
         speak("Something went wrong..")
 elif '2' in inp:
-    # print("Enter the name of PDF file. And make sure to that Your file name doesn't include spaces ")
-    # speak("Enter the name of PDF file. And make sure to that Your file name doesn't include spaces ")
     print("Enter the name of PDF file. ")
     print("Make sure your pdf have proper text in pdf..")
     print("pdf files are not working with cmd")
@@ -78,24 +74,15 @@ elif '2' in inp:
     speak("There are to many pages available Here")
     print("Enter the number of page I want to speak ?")
     speak("Enter the number of page I want to speak ?")
-    # Try is not working while taking input
     pg = int(input("--> "))
-    # print("I am reading 2 pages from here.")
-    # speak("I am reading 2 pages from here.")
     page = pdfReader.getPage(pg)
     str_pdf = page.extractText()
     # --------------------------
     fout_pdf = open('text_file.txt', 'w', encoding='utf-8')
-    # str_pdf = ""
     try:
-        # for line in text:
-        #     str_pdf += line
         str_pdf = str_pdf.replace('\n', ' ')
         single_spaces = ' '.join(str_pdf.split())
         single_spaces = single_spaces.replace('.', '.\n')
-        # print(str)
-        # print(len(str))
-        # print(single_spaces)
         single_spaces = str(single_spaces)
         single_spaces = comaMaker(single_spaces)
         fout_pdf.write(single_spaces)
