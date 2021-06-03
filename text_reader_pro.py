@@ -5,26 +5,22 @@ engine = pyttsx3.init('sapi5')
 voice = engine.getProperty('voices')
 engine.setProperty('voice', voice[3].id)
 
-# speaking function
+# Speaking function
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
 
-# format text
+# Format text
 def comaMaker(str):
     count = 0
     new_str = ""
-    # adding double spaces
+    # Adding double spaces
     for word in str:
-        # if count == 3:
-        #     word += "."
-        #     count = 0
         if word == " ":
             word += " "
-            # count += 1
         new_str += word
 
-    # main work
+    # Main work
     nxt_str = ""
     for word in new_str:
         if count == 5:
@@ -33,14 +29,13 @@ def comaMaker(str):
         if word == " ":
             count += 1
         nxt_str += word
-    # print(nxtStr)
     nxt_str = nxt_str.replace("  ", " ")
     nxt_str = nxt_str.replace(" .", ".")
-    # print(nxt_str)
     str = ""
     return nxt_str
 
 # ----------------------------------------------------------------------------------------------------------------------
+# Taking input and format file
 print("Please. Enter the name of file ")
 speak("Please. Enter the name of file ")
 fin = input("--> ")
@@ -61,7 +56,7 @@ except SyntaxError:
     speak("Something went wrong..")
 
 # ---------------------------------------------------------------------------------------------------------------------
-# speaking the book
+# Speaking the Document
 print("For better Experience. I format your doc According to my taste.")
 speak("For better Experience. I format your doc According to my taste.")
 try:
