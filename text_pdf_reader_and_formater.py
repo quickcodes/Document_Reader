@@ -13,6 +13,30 @@ def speak(audio):
     engine.runAndWait()
 
 
+# Format text
+def comaMaker(str):
+    count = 0
+    new_str = ""
+    # Adding double spaces
+    for word in str:
+        if word == " ":
+            word += " "
+        new_str += word
+
+    # Main work
+    nxt_str = ""
+    for word in new_str:
+        if count == 5:
+            word += word.replace(" ", ". ")
+            count = 0
+        if word == " ":
+            count += 1
+        nxt_str += word
+    nxt_str = nxt_str.replace("  ", " ")
+    nxt_str = nxt_str.replace(" .", ".")
+    str = ""
+    return nxt_str
+
 # ----------------------------------------------------------------------------
 print("Which type of file you have to listen..?")
 speak("Which type of file you have to listen..?")
@@ -73,6 +97,7 @@ elif '2' in inp:
         # print(len(str))
         # print(single_spaces)
         single_spaces = str(single_spaces)
+        single_spaces = comaMaker(single_spaces)
         fout_pdf.write(single_spaces)
         fout_pdf.close()
     except SyntaxError:
