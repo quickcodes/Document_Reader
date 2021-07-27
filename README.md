@@ -1,4 +1,11 @@
 # Document_Reader
+
+## Natural Reader
+### latest version
+### How to use ?
+* copy text you want to read
+* run natural reader
+
 Reading in our modern age is not the best way.
 * Our intelligent code will read your document perfectly as possible. It will never Read your document like Eminem.
 
